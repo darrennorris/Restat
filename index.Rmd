@@ -1,9 +1,17 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
-date: "`r Sys.Date()`"
+title: "TITLE HERE"
+author: "names here"
+date: "`r Sys.setlocale('LC_TIME', 'Portuguese'); format(Sys.time(), '%d %B, %Y')`"
 site: bookdown::bookdown_site
+bibliography: references.bib
+description: "This is a minimal example."
+github-repo: darrennorris/Restat
+toc-title: Sumário
+urlcolor: blue
 ---
 
-# Down the rabbit-hole
+\newpage{}
+
+
+# Bem-vindos {.unnumbered}
 

@@ -1,8 +1,18 @@
-book_filename: "bookdownproj"
+book_filename: "Restat"
 output_dir: docs
 delete_merged_file: true
-edit: https://github.com/YOUR GITHUB USERNAME/YOUR REPO NAME/edit/main/%s
-view: https://github.com/YOUR GITHUB USERNAME/YOUR REPO NAME/blob/main/%s
+edit: https://github.com/darrennorris/Restat/edit/main/%s
+view: https://github.com/darrennorris/Restat/blob/main/%s
+lang: pt-BR
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: "Capítulo "
+  label:
+    fig: "Figura "
+    tab: "Tabela "
+
+rmd_files:
+  - "index.Rmd"
+  - "00-preface.Rmd"
+  - "00-intro.Rmd"
+  - "01-instalR.Rmd"

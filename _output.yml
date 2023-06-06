@@ -2,7 +2,12 @@ bookdown::gitbook:
   css: style.css
   config:
     toc:
+      collapse: section
       before: |
-        <li><a href="./">SHORT TITLE HERE</a></li>
+        <li><a href="./">Restat</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+bookdown::pdf_document2: 
+ includes:
+      in_header: preamble.txe

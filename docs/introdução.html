@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>TITLE HERE</title>
+  <title>Introdução | TITLE HERE</title>
   <meta name="description" content="This is a minimal example." />
   <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="TITLE HERE" />
+  <meta property="og:title" content="Introdução | TITLE HERE" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is a minimal example." />
   <meta name="github-repo" content="darrennorris/Restat" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="TITLE HERE" />
+  <meta name="twitter:title" content="Introdução | TITLE HERE" />
   
   <meta name="twitter:description" content="This is a minimal example." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="prefácio-à-primeira-edição.html"/>
+<link rel="prev" href="prefácio-à-primeira-edição.html"/>
+<link rel="next" href="instalação-do-r-e-rstudio.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -181,23 +181,79 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">TITLE HERE</h1>
-<p class="author"><em>names here</em></p>
-<p class="date"><em>06 junho, 2023</em></p>
+<div id="introdução" class="section level1 unnumbered hasAnchor">
+<h1>Introdução<a href="introdução.html#introdução" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="o-que-você-vai-aprender" class="section level2 unnumbered hasAnchor">
+<h2>O que você vai aprender<a href="introdução.html#o-que-você-vai-aprender" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 </div>
-<div id="bem-vindos" class="section level1 unnumbered hasAnchor">
-<h1>Bem-vindos<a href="index.html#bem-vindos" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="como-este-livro-está-organizado" class="section level2 unnumbered hasAnchor">
+<h2>Como este livro está organizado<a href="introdução.html#como-este-livro-está-organizado" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="o-que-você-não-vai-aprender" class="section level2 unnumbered hasAnchor">
+<h2>O que você não vai aprender<a href="introdução.html#o-que-você-não-vai-aprender" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Base teorica pra tras os conceitos e calculos. O foco é sobre a aplicação, e isso não preciso avanços teoricas. Incluimos referencias para que é possivel obter maior detalhes sobre os conceitos e teorias…</p>
+</div>
+<div id="prerequisites" class="section level2 unnumbered hasAnchor">
+<h2>Prerequisites<a href="introdução.html#prerequisites" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Fizemos algumas suposições sobre o que você já sabe para aproveitar ao máximo este livro.
+Você deve ser geralmente alfabetizado numericamente, e …</p>
+<p>Você precisa de quatro coisas para executar o código deste livro: R, RStudio, uma coleção de pacotes R chamada <strong>tidyverse</strong> e um punhado de outros pacotes.
+Os pacotes são as unidades fundamentais do código R reproduzível.
+Eles incluem funções reutilizáveis, documentação que descreve como usá-los e dados de amostra.</p>
+<div id="r" class="section level3 unnumbered hasAnchor">
+<h3>R<a href="introdução.html#r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Para fazer o download do R, acesse CRAN, a <strong>c</strong>omprehensive <strong>R</strong> <strong>a</strong>rchive <strong>n</strong>network, <a href="https://cloud.r-project.org" class="uri">https://cloud.r-project.org</a>.
+Uma nova versão principal do R é lançada uma vez por ano e há 2 a 3 versões secundárias a cada ano.
+É uma boa ideia atualizar regularmente.
+A atualização pode ser um pouco complicada, especialmente para as versões principais que exigem a reinstalação de todos os seus pacotes, mas adiar só piora as coisas.
+Recomendamos R 4.2.0 ou posterior para este livro.</p>
+</div>
+<div id="rstudio" class="section level3 unnumbered hasAnchor">
+<h3>RStudio<a href="introdução.html#rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>RStudio é um ambiente de desenvolvimento integrado, ou IDE, para programação R, que você pode baixar em <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a>.
+O RStudio é atualizado algumas vezes por ano e avisa automaticamente quando uma nova versão é lançada, para que não haja necessidade de verificar novamente.
+É uma boa ideia atualizar regularmente para aproveitar os melhores e mais recentes recursos.
+Para este livro, certifique-se de ter pelo menos o RStudio 2022.02.0.</p>
+</div>
+<div id="o-universo-arrumado---tidyverse" class="section level3 unnumbered hasAnchor">
+<h3>O universo arrumado - tidyverse<a href="introdução.html#o-universo-arrumado---tidyverse" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Você também precisará instalar alguns pacotes do R.
+Um <strong>pacote</strong> do R é uma coleção de funções, dados e documentação que estende os recursos do R base.
+O uso de pacotes é a chave para o uso bem-sucedido do R.
+A maioria dos pacotes que você aprenderá neste livro faz parte do chamado tidyverse.
+Todos os pacotes no tidyverse compartilham uma filosofia comum de programação de dados e R e são projetados para trabalhar juntos.</p>
+<p>Você pode instalar o tidyverse completo com uma única linha de código:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="introdução.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<p>No seu computador, digite essa linha de código no console e pressione enter para executá-lo.
+R irá baixar os pacotes do CRAN e instalá-los em seu computador.</p>
+<p>Você não poderá usar as funções, objetos ou arquivos de ajuda em um pacote até carregá-lo com <code>library()</code>.
+Depois de instalar um pacote, você pode carregá-lo usando a função <code>library()</code>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="introdução.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
+<p>Isso diz a você que o tidyverse carrega nove pacotes: dplyr, forcats, ggplot2, lubridate, purrr, readr, stringr, tibble, alignr.
+Eles são considerados o <strong>núcleo</strong> do tidyverse porque você os usará em quase todas as análises.</p>
+<p>Os pacotes no tidyverse mudam com bastante frequência.
+Você pode ver se há atualizações disponíveis executando <code>tidyverse_update()</code>.</p>
+</div>
+<div id="outros-pacotes" class="section level3 unnumbered hasAnchor">
+<h3>Outros pacotes<a href="introdução.html#outros-pacotes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Existem muitos outros pacotes excelentes que não fazem parte do tidyverse porque resolvem problemas em um domínio diferente ou são projetados com um conjunto diferente de princípios subjacentes.
+Isso não os torna melhores ou piores, apenas diferentes.</p>
+<p>Usaremos outras pacotes de fora do tidyverse neste livro.
+Por exemplo, usaremos os seguintes pacotes porque eles fornecem conjuntos de funcões e dados interessantes para trabalharmos no processo de aprendizado de R:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="introdução.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">&quot;sp&quot;</span>, <span class="st">&quot;sf&quot;</span>,<span class="st">&quot;raster&quot;</span>, <span class="st">&quot;mapview&quot;</span>,<span class="st">&quot;tmap&quot;</span>, </span>
+<span id="cb3-2"><a href="introdução.html#cb3-2" aria-hidden="true" tabindex="-1"></a>                   <span class="st">&quot;terra&quot;</span>, <span class="st">&quot;kableExtra&quot;</span>, <span class="st">&quot;landscapemetrics&quot;</span>))</span></code></pre></div>
 
 <div style="page-break-after: always;"></div>
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="prefácio-à-primeira-edição.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="prefácio-à-primeira-edição.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="instalação-do-r-e-rstudio.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -228,7 +284,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/darrennorris/Restat/edit/main/index.Rmd",
+"link": "https://github.com/darrennorris/Restat/edit/main/00-intro.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -236,7 +292,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/darrennorris/Restat/blob/main/index.Rmd",
+"link": "https://github.com/darrennorris/Restat/blob/main/00-intro.Rmd",
 "text": null
 },
 "download": ["Restat.pdf"],
